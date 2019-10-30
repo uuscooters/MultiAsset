@@ -1,0 +1,22 @@
+
+<resources>
+
+
+        <string name="app_name">Task-Layout</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="jobs">Pekerjaan</string>
+        <string name="search">Pencarian</string>
+        <string name="posted_more_than_two_weeks_ago">Dikirim bebrapa waktu yang lalu</string>
+        <string name="software_engineer">Insinyur perangkat lunak</string>
+        <string name="full_time_n_jakarta">* Waktu penuh * Jakarta</string>
+        <string name="delete_post">Hapus post</string>
+        <string name="add_post">Tambah post</string>
+        <string name="update_post">Perbarui post</string>
+
+
+
+
+
+</resources>

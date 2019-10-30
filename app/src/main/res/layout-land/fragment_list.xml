@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:columnCount="3">
+
+<TextView
+    android:visibility="gone"
+    android:id="@+id/tvSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:textColor="@android:color/holo_red_dark"
+    android:padding="8dp"
+    android:gravity="center"
+    tools:text="@tools:sample/full_names"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/item_row"
+    tools:context=".fragment.JobsFragment"/>
+
+</LinearLayout>
