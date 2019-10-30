@@ -1,5 +1,6 @@
 package com.biceps_studio.task_layout.fragment
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -92,13 +93,28 @@ class JobsFragment : Fragment() {
 
         jobsAdapter.list = list
 
-        val gridLayoutManager = GridLayoutManager(activity!!,2)
 
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
 
-        rvList.apply {
-            setHasFixedSize(true)
-            layoutManager = gridLayoutManager
-            adapter = jobsAdapter
+            val gridLayoutManager = GridLayoutManager(activity!!,3)
+
+            rvList.apply {
+                setHasFixedSize(true)
+                layoutManager = gridLayoutManager
+                adapter = jobsAdapter
+            }
+
+        } else {
+
+            val gridLayoutManager = GridLayoutManager(activity!!,2)
+            rvList.apply {
+                setHasFixedSize(true)
+                layoutManager = gridLayoutManager
+                adapter = jobsAdapter
+            }
+
         }
+
+
     }
 }
